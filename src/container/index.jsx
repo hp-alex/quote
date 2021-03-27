@@ -15,7 +15,7 @@ const Home = () => {
 
   useEffect(()=>{
       setLoading(true);
-      axios.get(`http://quotes.rest/qod.json?category=${url}`)
+      axios.get(`https://quotes.rest/qod.json?category=${url}`)
       .then(res=>{
           dispatch(changeBg(res.data.contents.quotes[0].background));
           dispatch(changeQuote(res.data.contents.quotes[0].quote));
