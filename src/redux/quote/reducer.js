@@ -3,7 +3,7 @@ const INITIAL_STATE = {
     arrButtons: ['Inspire', 'Management', 'Sports', 'Life', 'Funny', 'Love', 'Art'],
     background: '',
     quote: '',
-    author: '',
+    author: '', 
     url: 'Sports'
 };
 
@@ -14,7 +14,7 @@ const reducer = (state=INITIAL_STATE, action) => {
         case types.changeBG:
             return { ...state, background: action.background}
         case types.changeQuote:
-            return { ...state, quote: action.quote}
+            return { ...state, quote: action.quote}``
         case types.changeAuthor:
             return { ...state, author: action.author}
         default: return state;
