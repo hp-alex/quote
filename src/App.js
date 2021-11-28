@@ -3,6 +3,7 @@ import store from './redux/store'
 import {Provider} from 'react-redux'
 import Home from './container'
 // BU Kholbek App
+// App updated by Makhmudjon
 
 function App() {
   return (
