@@ -13,7 +13,9 @@ const Menu = () => {
     return (
          <MenuView active={door}>     
             <MenuItems>
-                <TopMenu></TopMenu>
+                <TopMenu>
+                    <h1>Menu</h1>
+                </TopMenu>
                 <CenterMenu>{
                         door?
                             array.map((value, ind)=>{
